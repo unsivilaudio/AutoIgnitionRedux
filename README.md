@@ -81,7 +81,29 @@ Grab the latest compiled version from the [latest releases](releases/latest) and
 ---
 # ⛏️ Building
 
-This is a <span style="color: orange;">**Maven**</span> project.  Included in the `pom` file is a custom profile for building and running your development server. In [server.properties](server.properties), you need to properly configure your Hytale development server path and release type.  After which, simply enable the `build-and-run` profile if using the Maven build tools extension, and run the `install` lifecycle.  The compiled JAR will be built and transferred to your server's `mod` folder and the server started afterward.
+This is a <span style="color: orange;">**Maven**</span> project.  Included in the `pom` file is a custom profile for building and running your development server. 
+<br/>
+In the `pom.xml`, if necessary, update the current game version. 
+```xml
+<dependency>
+    <groupId>com.hypixel.hytale</groupId>
+    <artifactId>Server</artifactId>
+    <!-- UPDATE WITH LATEST VERSION & ADD TO RESOURCES -->
+    <version>2026.03.26-89796e57b</version>
+    <scope>provided</scope>
+</dependency>
+```
+<br/>
+
+In [server.properties](server.properties), you need to properly configure your Hytale development server path and release type.  
+```
+hytale.server.kind=release
+hytale.server.dir=C:\\Users\\Trinity\\AppData\\Roaming\\Hytale\\install\\${hytale.server.kind}\\package\\game\\latest
+hytale.plugins.dir=${hytale.server.dir}\\Server\\mods
+```
+<br/>
+After which, simply enable the `build-and-run` profile if using the Maven build tools extension, and run the `install` lifecycle.  The compiled JAR will be built and transferred to your server's `mod` folder and the server started afterward.
+<br/><br/>
 
 Alternatively, you can run profile in terminal of your local project.
 > `mvn install -P="build-and-run"`

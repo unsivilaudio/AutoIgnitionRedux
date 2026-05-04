@@ -1,7 +1,7 @@
 {
     "Group": "AutoIgnitionRedux",
     "Name": "AutoIgnitionRedux",
-    "Version": "1.0.0-dev",
+    "Version": "1.0.0-initial",
     "Description": "Furnace Automation Plugin",
     "Authors": [
         {
@@ -18,7 +18,7 @@
             "Email": "lucas.cofrancou@gmail.com"
         }
     ],
-    "Website": "https://github.com/unsivilaudio",
+    "Website": "https://github.com/unsivilaudio/AutoIgnitionRedux",
     "DisabledByDefault": false,
     "IncludesAssetPack": true,
     "Dependencies": {},

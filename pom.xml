@@ -6,11 +6,10 @@
 
   <groupId>dev.unsivil.ai_redux</groupId>
   <artifactId>autoignition-redux</artifactId>
-  <version>1.0.0-dev</version>
+  <version>1.0.0-initial</version>
 
   <name>autoignition-redux</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com.example</url>
+  <url>github.com/unsivilaudio/AutoIgnitionRedux</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
