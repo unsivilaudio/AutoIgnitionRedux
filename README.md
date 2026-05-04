@@ -3,16 +3,16 @@
 
 ### 🖼️ Gallery
 <span style="display: flex; gap: 25px;">
-    <a href="assets/gui_info.png">
+    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/assets/gui_info.png" style="text-decoration: none;">
         <img src="assets/gui_info.png" alt="gui-info" width="200">
     </a>
-    <a href="assets/gui_global.png">
+    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/assets/gui_global.png" style="text-decoration: none;">
         <img src="assets/gui_global.png" alt="gui-global" width="200">
     </a>
-    <a href="assets/gui_config.png">
+    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/assets/gui_config.png" style="text-decoration: none;">
         <img src="assets/gui_config.png" alt="gui-config" width="200">
     </a>
-    <a href="assets/gui_about.png">
+    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/assets/gui_about.png" style="text-decoration: none;">
         <img src="assets/gui_about.png" alt="gui-about" width="200">
     </a>
 </span>
@@ -70,7 +70,7 @@ _example configuration_ -- `AutoReduxConfig.json`
 ---
 # 🔧 Installing
 
-Grab the latest compiled version from the [latest releases](github.com/unsivilaudio/AutoIgnitionRedux/releases/latest) and drop it in your Hytale server's `mod` folder. This plugin ships with sensible defaults, and you should not have to configure anything if you do not want to.
+Grab the latest compiled version from the [latest releases](https://github.com/unsivilaudio/AutoIgnitionRedux/releases/latest) and drop it in your Hytale server's `mod` folder. This plugin ships with sensible defaults, and you should not have to configure anything if you do not want to.
 
 <br/>
 
@@ -91,7 +91,7 @@ In the `pom.xml`, if necessary, update the current game version.
 ```
 <br/>
 
-In [server.properties](github.com/unsivilaudio/AutoIgnitionRedux/server.properties), you need to properly configure your Hytale development server path and release type.  
+In [server.properties](https://github.com/unsivilaudio/AutoIgnitionRedux/server.properties), you need to properly configure your Hytale development server path and release type.  
 ```
 hytale.server.kind=release
 hytale.server.dir=C:\\Users\\Trinity\\AppData\\Roaming\\Hytale\\install\\${hytale.server.kind}\\package\\game\\latest
@@ -108,4 +108,4 @@ Alternatively, you can run profile in terminal of your local project.
 
 ---
 # 💬 Issues & Feedback
-Please report any issues you encounter in the [issue tracker](github.com/unsivilaudio/AutoIgnitionRedux/issues).  Suggestions for future functionality also encouraged.  Big thanks to [Lutia](https://github.com/lukkoedm) for the basis for this plugin. 😊
+Please report any issues you encounter in the [issue tracker](https://github.com/unsivilaudio/AutoIgnitionRedux/issues).  Suggestions for future functionality also encouraged.  Big thanks to [Lutia](https://github.com/lukkoedm) for the basis for this plugin. 😊
