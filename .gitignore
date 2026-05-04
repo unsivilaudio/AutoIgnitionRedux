@@ -1,0 +1,4 @@
+.mvn
+data/
+**/test/
+target/

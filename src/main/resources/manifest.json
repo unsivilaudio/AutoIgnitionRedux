@@ -1,0 +1,28 @@
+{
+    "Group": "AutoIgnitionRedux",
+    "Name": "AutoIgnitionRedux",
+    "Version": "1.0.0-dev",
+    "Description": "Furnace Automation Plugin",
+    "Authors": [
+        {
+            "Name": "unsivil",
+            "Email": "unsivilaudio@gmail.com",
+            "Url": "https://github.com/unsivilaudio"
+        },
+        {
+            "Name": "Lutia",
+            "Email": "lukkoedm@gmail.com"
+        },
+        {
+            "Name": "Faiizer",
+            "Email": "lucas.cofrancou@gmail.com"
+        }
+    ],
+    "Website": "https://github.com/unsivilaudio",
+    "DisabledByDefault": false,
+    "IncludesAssetPack": true,
+    "Dependencies": {},
+    "OptionalDependencies": {},
+    "ServerVersion": "2026.03.26-89796e57b",
+    "Main": "dev.unsivil.ai_redux.AutoIgnitionRedux"
+}

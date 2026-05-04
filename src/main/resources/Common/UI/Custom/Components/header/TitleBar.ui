@@ -1,0 +1,22 @@
+@TitleBar = Group {
+    LayoutMode: Left;
+    Anchor: (Width: 700, Height: 30);
+    Padding: (Vertical: 5);
+    Label #HeaderAuto {
+      Anchor: (Vertical: 1);
+      Padding: (Left: 15);
+      Text: "Auto";
+      Style: (HorizontalAlignment: Center, VerticalAlignment: Center, TextColor: #ffaa4a, FontSize: 20, RenderBold: true, Alignment: Center);
+    }
+    Label #HeaderIgnition {
+      Anchor: (Vertical: 1);
+      Text: "Ignition";
+      Style: (HorizontalAlignment: Center, VerticalAlignment: Center, TextColor: #ffaa4a, FontSize: 20, RenderBold: true, Alignment: Center);
+    }
+    Label #HeaderRedux {
+      Anchor: (Vertical: 1);
+      Padding: (Bottom: 9);
+      Text: "Redux";
+      Style: (RenderUppercase: true, HorizontalAlignment: Center, VerticalAlignment: Center, TextColor: #96092a, FontSize: 14, RenderBold: true, Alignment: Center);
+    }
+};

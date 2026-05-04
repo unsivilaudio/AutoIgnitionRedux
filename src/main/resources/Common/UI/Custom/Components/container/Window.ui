@@ -1,0 +1,4 @@
+@Main = Group {
+    LayoutMode: Left;
+    Anchor: (Width: 700, Vertical: 1);
+};

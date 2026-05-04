@@ -1,0 +1,29 @@
+$C = "../Common.ui";
+$T = "../Components/header/TitleBar.ui";
+$N = "../Components/nav/NavBar.ui";
+$WINDOW = "../Components/container/Window.ui";
+$CPANE = "../Components/container/ContentPane.ui";
+@ICON = "../icon-256.png";
+
+@VIEWHEIGHT = 500 - $C.@TitleHeight - 8; 
+
+$C.@DecoratedContainer #MainPanel {
+    Anchor: (Height: 500, Width: 700);
+    #Title {
+        Anchor: (Height: $C.@TitleHeight, Top: 0, Left: -5, Right: -5);
+        $T.@TitleBar #Header {}
+    }
+    #Content {
+        Anchor: (Top: $C.@TitleHeight, Left: -5, Right: -5);
+        Padding: (Full: $C.@ContentPaddingFull, Top: 0, Bottom: 0);
+        $WINDOW.@Main {
+            $N.@NavBar #NavPane {}
+            $CPANE.@Main #ContentMain {
+                Group #ContentPane {
+                  LayoutMode: Top;
+                  Anchor: (Vertical: 1);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+$ENTRY = "../../Pages/Index.ui";
+
+@Main = Group {
+    LayoutMode: Top;
+    Anchor: (Width: 550, Height: $ENTRY.@VIEWHEIGHT);
+    Group #Header {
+        LayoutMode: Center;
+        Background: (Color: #000000(0.3));
+        Anchor: (Height: 51);
+        Label #HeaderLabel {
+          Anchor: (Full: 1);
+          Text: "Info";
+          Style: (VerticalAlignment: Center, Alignment: Center, TextColor: #BEBEC9, FontSize: 25, RenderBold: true);
+        }
+    }
+    Label #HeaderSep {
+        Background: (Color: #000000(0.3));
+        Anchor: (Height: 3, Left: 10, Right: 10, Top: 5, Bottom: 25);
+        Text: "";
+        Style: (TextColor: #ffffff);
+    }
+};

@@ -1,0 +1,5 @@
+@StandardStyle = LabelStyle(
+    RenderUppercase: true, 
+    TextColor: #6e7da1
+);
+@SelectedStyle = LabelStyle(RenderBold: true, RenderUppercase: true, TextColor: #bac9ec);

@@ -1,0 +1,20 @@
+$ENTRY = "../../Pages/Index.ui";
+$N = "NavBarItem.ui";
+$I = "items/NavItems.ui";
+
+@SelectedBackground = (Color: #6E7DA1(0.28));
+
+@NavBar = Group {
+    LayoutMode: Top;
+    Background: (Color: #0a1119(0.95));
+    Anchor: (Width: 150, Height: $ENTRY.@VIEWHEIGHT);
+    Label {
+        Anchor: (Height: 50);
+        Text: "";
+        Style: (TextColor: #ffffff);
+    }
+    Group #NavBarItems {
+        LayoutMode: Top;
+        Anchor: (Vertical: 1);
+    }
+};
