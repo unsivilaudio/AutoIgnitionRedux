@@ -1,12 +1,12 @@
-<div style="display: flex; align-items: center; gap: 10px;">
+<span style="display: flex; align-items: center; gap: 10px;">
  <h1>AutoIgnitionRedux</h1> 
  <img src="assets/flaticon_flame.png" height="30">
-</div>
+</span>
 
 > a Hytale furnace automation plugin
 
 ### 🖼️ Gallery
-<div style="display: flex; gap: 25px;">
+<span style="display: flex; gap: 25px;">
     <a href="assets/gui_info.png">
         <img src="assets/gui_info.png" alt="gui-info" width="200">
     </a>
@@ -19,7 +19,7 @@
     <a href="assets/gui_about.png">
         <img src="assets/gui_about.png" alt="gui-about" width="200">
     </a>
-</div>
+</span>
 
 ### ⚙️ Configuration
 _example configuration_ -- config.json
