@@ -3,16 +3,16 @@
 
 ### 🖼️ Gallery
 <span style="display: flex; gap: 25px;">
-    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/assets/gui_info.png" style="text-decoration: none;">
+    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/blob/master/assets/gui_info.png" style="text-decoration: none;">
         <img src="assets/gui_info.png" alt="gui-info" width="200">
     </a>
-    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/assets/gui_global.png" style="text-decoration: none;">
+    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/blob/master/assets/gui_global.png" style="text-decoration: none;">
         <img src="assets/gui_global.png" alt="gui-global" width="200">
     </a>
-    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/assets/gui_config.png" style="text-decoration: none;">
+    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/blob/master/assets/gui_config.png" style="text-decoration: none;">
         <img src="assets/gui_config.png" alt="gui-config" width="200">
     </a>
-    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/assets/gui_about.png" style="text-decoration: none;">
+    <a href="https://github.com/unsivilaudio/AutoIgnitionRedux/blob/master/assets/gui_about.png" style="text-decoration: none;">
         <img src="assets/gui_about.png" alt="gui-about" width="200">
     </a>
 </span>
@@ -91,7 +91,7 @@ In the `pom.xml`, if necessary, update the current game version.
 ```
 <br/>
 
-In [server.properties](https://github.com/unsivilaudio/AutoIgnitionRedux/server.properties), you need to properly configure your Hytale development server path and release type.  
+In [server.properties](https://github.com/unsivilaudio/blob/master/AutoIgnitionRedux/server.properties), you need to properly configure your Hytale development server path and release type.  
 ```
 hytale.server.kind=release
 hytale.server.dir=C:\\Users\\Trinity\\AppData\\Roaming\\Hytale\\install\\${hytale.server.kind}\\package\\game\\latest
