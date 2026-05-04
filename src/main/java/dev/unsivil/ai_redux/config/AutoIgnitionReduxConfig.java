@@ -13,8 +13,8 @@ public class AutoIgnitionReduxConfig {
     
     private static final int CONFIG_VERSION = 1;
     private static final Map<String, ?> DEFAULT_CONFIG = Map.of(
-        "scanInterval", 500L,
-        "scanNeighborInterval", 1000L,
+        "scanInterval", 750L,
+        "scanNeighborInterval", 1500L,
         "autoStart", true,
         "autoStop", true,
         "autoFuel", true,
@@ -74,13 +74,11 @@ public class AutoIgnitionReduxConfig {
     
     public long getScanInterval() { return scanInterval; }
     
-    public void setScanInterval(long scanInterval) { this.scanInterval = Math.max((long) DEFAULT_CONFIG.get("scanInterval"), scanInterval); }
+    public void setScanInterval(long scanInterval) { this.scanInterval = Math.max((long) 500L, scanInterval); }
     
     public long getScanNeighborInterval() { return scanNeighborInterval; }
     
-    public void setScanNeighborInterval(long scanNeighborInterval) {
-        this.scanNeighborInterval = Math.max((long) DEFAULT_CONFIG.get("scanNeighborInterval"), scanNeighborInterval);
-    }
+    public void setScanNeighborInterval(long scanNeighborInterval) { this.scanNeighborInterval = Math.max((long) 1000L, scanNeighborInterval); }
     
     public boolean isAutoStart() { return autoStart; }
     
