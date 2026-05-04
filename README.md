@@ -1,8 +1,4 @@
-<span style="display: flex; align-items: center; gap: 10px;">
- <h1>AutoIgnitionRedux</h1> 
- <img src="assets/flaticon_flame.png" height="30">
-</span>
-
+# AutoIgnitionRedux 🔥
 > a Hytale furnace automation plugin
 
 ### 🖼️ Gallery
@@ -22,7 +18,7 @@
 </span>
 
 ### ⚙️ Configuration
-_example configuration_ -- config.json
+_example configuration_ -- `AutoReduxConfig.json`
 ```
 {
   "ConfigVersion": 1, // DONOTCHANGE
@@ -66,7 +62,7 @@ _example configuration_ -- config.json
 | /autoignition                         | `autoignitionredux.commmands` | _base permission_ <br/>Also grants access to the gui menu |
 | /autoignition&nbsp;config             | `autoignitionredux.commands.config` | _configuration permission_ </br>Can alter plugin configuration in menu |
 | /autoignition&nbsp;config&nbsp;reload | `autoignitionredux.commands.config.reload` | _configuration reloading permission_ </br>allows reloading of configuration from file |
-| /autoignition&nbsp;global             | `autoignitionredux.commands.global` | _global control permission_ </br>Separate from configuration. Allows global enable/disable of the plugin through commands and menu |
+| /autoignition&nbsp;global&nbsp;             | `autoignitionredux.commands.global` | _global control permission_ </br>Separate from configuration. Allows global enable/disable of the plugin through commands and menu |
 > _command aliases `/ai` and `/air`
 
 <br/>
@@ -74,7 +70,7 @@ _example configuration_ -- config.json
 ---
 # 🔧 Installing
 
-Grab the latest compiled version from the [latest releases](releases/latest) and drop it in your Hytale server's `mod` folder. This plugin ships with sensible defaults, and you should not have to configure anything if you do not want to.
+Grab the latest compiled version from the [latest releases](github.com/unsivilaudio/AutoIgnitionRedux/releases/latest) and drop it in your Hytale server's `mod` folder. This plugin ships with sensible defaults, and you should not have to configure anything if you do not want to.
 
 <br/>
 
@@ -95,7 +91,7 @@ In the `pom.xml`, if necessary, update the current game version.
 ```
 <br/>
 
-In [server.properties](server.properties), you need to properly configure your Hytale development server path and release type.  
+In [server.properties](github.com/unsivilaudio/AutoIgnitionRedux/server.properties), you need to properly configure your Hytale development server path and release type.  
 ```
 hytale.server.kind=release
 hytale.server.dir=C:\\Users\\Trinity\\AppData\\Roaming\\Hytale\\install\\${hytale.server.kind}\\package\\game\\latest
@@ -112,4 +108,4 @@ Alternatively, you can run profile in terminal of your local project.
 
 ---
 # 💬 Issues & Feedback
-Please report any issues you encounter in the [issue tracker](issues).  Suggestions for future functionality also encouraged.  Big thanks to [Lutia](https://github.com/lukkoedm) for the basis for this plugin. 😊
+Please report any issues you encounter in the [issue tracker](github.com/unsivilaudio/AutoIgnitionRedux/issues).  Suggestions for future functionality also encouraged.  Big thanks to [Lutia](https://github.com/lukkoedm) for the basis for this plugin. 😊
