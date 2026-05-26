@@ -6,7 +6,7 @@
 
   <groupId>dev.unsivil.ai_redux</groupId>
   <artifactId>autoignition-redux</artifactId>
-  <version>1.0.1-release</version>
+  <version>1.0.2-release</version>
 
   <name>autoignition-redux</name>
   <url>github.com/unsivilaudio/AutoIgnitionRedux</url>
@@ -40,7 +40,7 @@
       <groupId>com.hypixel.hytale</groupId>
       <artifactId>Server</artifactId>
       <!-- UPDATE WITH LATEST VERSION & ADD TO RESOURCES -->
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
