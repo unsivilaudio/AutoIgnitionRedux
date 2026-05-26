@@ -7,7 +7,6 @@ import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.command.system.AbstractCommand;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.command.system.CommandSender;
-import com.hypixel.hytale.server.core.entity.entities.Player;
 
 import dev.unsivil.ai_redux.AutoIgnitionRedux;
 import dev.unsivil.ai_redux.commands.util.PermBuilder;
@@ -41,16 +40,16 @@ public class ConfigReload extends AbstractCommand {
         
         futureLoaded.whenComplete((result, ex) -> {
             if (ex != null) {
-                if (sender instanceof Player player) {
-                    player.sendMessage(Message.raw("Something went wrong loading the config."));
+                if (context.isPlayer()) {
+                    sender.sendMessage(Message.raw("Something went wrong loading the config."));
                     return;
                 }
                 logger.atSevere().log("Something went wrong loading the config. " + ex.getMessage());
                 return;
             }
             
-            if (sender instanceof Player player) {
-                player.sendMessage(Message.raw("AutoIgnitionRedux configuration reloaded."));
+            if (context.isPlayer()) {
+                sender.sendMessage(Message.raw("AutoIgnitionRedux configuration reloaded."));
             } else {
                 logger.atInfo().log("Configuration reloaded.");
             }

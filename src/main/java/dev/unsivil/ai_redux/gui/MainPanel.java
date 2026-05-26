@@ -32,6 +32,7 @@ import dev.unsivil.ai_redux.gui.util.PlayerNotifier;
 
 public class MainPanel extends InteractiveCustomUIPage<MainPanel.MainPanelData> {
     private static final AutoIgnitionRedux mod = AutoIgnitionRedux.getInstance();
+    @SuppressWarnings("unused")
     private static final HytaleLogger logger = mod.getLogger();
     private static final String NAV_ENTRY_POINT = HashBuilder.fullQualifiedPath("#Content", "#NavPane", "#NavBarItems");
     private static final String CONTENT_ENTRY_POINT = HashBuilder.fullQualifiedPath("#Content", "#ContentMain", "#ContentPane");
@@ -63,7 +64,7 @@ public class MainPanel extends InteractiveCustomUIPage<MainPanel.MainPanelData> 
     
     private void render(String selectedPane) {
         if ((!this.selectedPane.equals(selectedPane)) && this.uicBuilder != null) {
-            logger.atInfo().log("Rebuilding for %s", selectedPane);
+            // logger.atInfo().log("Rebuilding for %s", selectedPane);
             this.selectedPane = selectedPane;
             this.rebuild();
         }
@@ -123,7 +124,6 @@ public class MainPanel extends InteractiveCustomUIPage<MainPanel.MainPanelData> 
                 String name = field.getName();
                 if (name.equals("navbar") && field.get(data) != null) {
                     render(data.navbar);
-                    break;
                 }
                 if (name.startsWith("auto") && field.get(data) != null) {
                     updateLocalConfig(name, Boolean.parseBoolean((String) field.get(data)));
@@ -133,7 +133,7 @@ public class MainPanel extends InteractiveCustomUIPage<MainPanel.MainPanelData> 
                     updateLocalConfig(name, Long.parseLong((String) field.get(data)));
                 }
                 if (name.equals("configButton") && field.get(data) != null) {
-                    logger.atInfo().log(config.toJSON());
+                    // logger.atInfo().log(config.toJSON());
                     mod.getConfig().persist(config);
                     mod.saveConfig();
                     notifier.sendIconNotification(

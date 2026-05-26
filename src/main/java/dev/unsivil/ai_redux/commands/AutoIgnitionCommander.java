@@ -48,19 +48,18 @@ public class AutoIgnitionCommander extends AbstractCommand {
         @Nonnull CommandContext context
     ) {
         if (context.isPlayer()) {
-            if (context.sender() instanceof Player player) {
-                Ref<EntityStore> ref = player.getReference();
-                if (ref != null && ref.isValid()) {
-                    Store<EntityStore> store = ref.getStore();
-                    World world = store.getExternalData().getWorld();
-                    return CompletableFuture.runAsync(() -> {
-                        PlayerRef playerRef = store.getComponent(ref, PlayerRef.getComponentType());
-                        if (playerRef != null) {
-                            MainPanel panel = new MainPanel(playerRef);
-                            player.getPageManager().openCustomPage(ref, store, panel);
-                        }
-                    }, world);
-                }
+            Ref<EntityStore> ref = context.senderAsPlayerRef();
+            if (ref != null && ref.isValid()) {
+                Store<EntityStore> store = ref.getStore();
+                World world = store.getExternalData().getWorld();
+                return CompletableFuture.runAsync(() -> {
+                    PlayerRef playerRef = store.getComponent(ref, PlayerRef.getComponentType());
+                    Player player = store.getComponent(ref, Player.getComponentType());
+                    if (playerRef != null) {
+                        MainPanel panel = new MainPanel(playerRef);
+                        player.getPageManager().openCustomPage(ref, store, panel);
+                    }
+                }, world);
             }
         }
         

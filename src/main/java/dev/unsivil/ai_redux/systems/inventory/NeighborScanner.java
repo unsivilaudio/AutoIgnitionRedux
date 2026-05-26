@@ -1,6 +1,7 @@
 package dev.unsivil.ai_redux.systems.inventory;
 
-import com.hypixel.hytale.math.vector.Vector3i;
+import org.joml.Vector3i;
+
 import com.hypixel.hytale.server.core.asset.type.blocktype.config.BlockType;
 import com.hypixel.hytale.server.core.asset.type.blocktype.config.StateData;
 import com.hypixel.hytale.server.core.universe.world.World;

@@ -2,6 +2,7 @@ package dev.unsivil.ai_redux.gui.nav;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.UUID;
 
 import javax.annotation.Nonnull;
 
@@ -9,6 +10,7 @@ import com.hypixel.hytale.component.Ref;
 import com.hypixel.hytale.component.Store;
 import com.hypixel.hytale.protocol.packets.interface_.CustomUIEventBindingType;
 import com.hypixel.hytale.server.core.entity.entities.Player;
+import com.hypixel.hytale.server.core.permissions.PermissionsModule;
 import com.hypixel.hytale.server.core.ui.PatchStyle;
 import com.hypixel.hytale.server.core.ui.Value;
 import com.hypixel.hytale.server.core.ui.builder.EventData;
@@ -35,6 +37,7 @@ public class NavManager {
         this.selectedPane = selectedPane;
     }
     
+    @SuppressWarnings("removal")
     public UICommandBuilder build(
         @Nonnull Ref<EntityStore> ref,
         @Nonnull UICommandBuilder uiCommandBuilder,
@@ -45,7 +48,10 @@ public class NavManager {
         uiCommandBuilder = uiCommandBuilder.clear(entryPoint);
         UICommandBuilder uic = uiCommandBuilder;
         navOptions.entrySet().stream().forEach(entry -> {
-            if (player.hasPermission(entry.getValue())) {
+            // TODO -- NOTED FOR REMOVAL
+            UUID pid = player.getUuid();
+            assert pid != null;
+            if (PermissionsModule.get().hasPermission(pid, entry.getValue())) {
                 String iconPath = switch (entry.getKey()) {
                     case "Info" -> "Assets/icons/flaticon_info.png";
                     case "Global" -> "Assets/icons/flaticon_world.png";
