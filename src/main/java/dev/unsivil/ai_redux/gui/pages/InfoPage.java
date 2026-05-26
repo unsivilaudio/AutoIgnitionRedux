@@ -29,7 +29,7 @@ public class InfoPage extends UIPage {
             .map(s -> s.getName())
             .collect(Collectors.joining(", ")));
         fields.put("Description", manifest.getDescription());
-        fields.put("Game Version", manifest.getServerVersion());
+        fields.put("Game Version", manifest.getServerVersion().toString());
         fields.put("Last Update", AutoIgnitionRedux.getLastUpdateDate());
     }
     

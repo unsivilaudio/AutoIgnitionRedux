@@ -9,7 +9,6 @@ import com.hypixel.hytale.server.core.Message;
 import com.hypixel.hytale.server.core.command.system.AbstractCommand;
 import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.command.system.CommandSender;
-import com.hypixel.hytale.server.core.entity.entities.Player;
 
 import dev.unsivil.ai_redux.AutoIgnitionRedux;
 import dev.unsivil.ai_redux.commands.subcommands.global.GlobalSwitch;
@@ -47,8 +46,8 @@ public class AutoIgnitionCommandGlobal extends AbstractCommand {
         Boolean globalEnable = config.isEnabled();
         config.setGlobalEnable(!globalEnable);
         
-        if (sender instanceof Player player) {
-            player.sendMessage(Message.raw("%s %s".formatted(
+        if (context.isPlayer()) {
+            sender.sendMessage(Message.raw("%s %s".formatted(
                 mod.getManifest().getName(), config.isEnabled() ? "enabled" : "disabled")));
         } else {
             logger.atInfo().log("is now %s", config.isEnabled() ? "enabled" : "disabled");

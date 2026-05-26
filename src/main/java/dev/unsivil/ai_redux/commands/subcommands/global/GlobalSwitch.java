@@ -9,7 +9,6 @@ import com.hypixel.hytale.server.core.command.system.CommandContext;
 import com.hypixel.hytale.server.core.command.system.CommandSender;
 import com.hypixel.hytale.server.core.command.system.arguments.system.RequiredArg;
 import com.hypixel.hytale.server.core.command.system.arguments.types.ArgTypes;
-import com.hypixel.hytale.server.core.entity.entities.Player;
 
 import dev.unsivil.ai_redux.AutoIgnitionRedux;
 import dev.unsivil.ai_redux.config.AutoIgnitionReduxConfig;
@@ -45,8 +44,8 @@ public class GlobalSwitch extends AbstractCommand {
             }
         }
         
-        if (sender instanceof Player player) {
-            player.sendMessage(Message.raw("%s %s".formatted(
+        if (context.isPlayer()) {
+            sender.sendMessage(Message.raw("%s %s".formatted(
                 mod.getManifest().getName(), config.isEnabled() ? "enabled" : "disabled")));
         } else {
             logger.atInfo().log("is now %s", config.isEnabled() ? "enabled" : "disabled");

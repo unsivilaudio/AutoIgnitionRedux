@@ -3,7 +3,7 @@ package dev.unsivil.ai_redux.cache;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.hypixel.hytale.math.vector.Vector3i;
+import org.joml.Vector3i;
 
 
 /**
@@ -33,14 +33,10 @@ public class BenchCache {
      * Gets the list of cached container positions.
      * @return A list of {@link Vector3i} coordinates.
      */
-    public List<Vector3i> getContainerPositions() {
-        return containerPositions;
-    }
+    public List<Vector3i> getContainerPositions() { return containerPositions; }
     
     /** @return The timestamp of the last scan. */
-    public long getLastScanTime() {
-        return lastScanTime;
-    }
+    public long getLastScanTime() { return lastScanTime; }
     
     /** Updates the scan timestamp to the current system time. */
     public void updateScanTime() {
