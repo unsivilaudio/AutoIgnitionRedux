@@ -17,7 +17,7 @@ import dev.unsivil.ai_redux.systems.IgnitionSystem;
 
 
 public class AutoIgnitionRedux extends JavaPlugin {
-    public static final LocalDate UPDATE_DATE = LocalDate.of(2026, 5, 26);
+    public static final LocalDate UPDATE_DATE = LocalDate.of(2026, 6, 17);
     private static final HytaleLogger LOGGER = HytaleLogger.forEnclosingClass();
     private static AutoIgnitionRedux INSTANCE;
     
